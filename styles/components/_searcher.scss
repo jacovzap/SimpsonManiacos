@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as * ;
+
+.searcher-container {
+    height: 5vh;
+    width: 23vw;
+    background-color: $gray-color;
+    margin-left: 3.5vw;
+    border: 1px solid $stroke-color;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searcher-icon {
+    color: $text-gray-color;
+    font-size: 1.5vw;
+    // font-weight: 300;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    &:hover {
+        cursor: pointer;
+        color: $yellow-color;
+    }
+}
+
+.searcher-input {
+    width: calc(100% - 1.5vw);
+    border: none;
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+    padding-left: 1vw;
+    color: $text-gray-color;
+    background-color: $gray-color;
+    font-size: 1.2vw;
+    font-weight: 300;
+    &::placeholder {
+        color: $text-gray-alternative-color;
+        font-size: 1.2vw;
+        font-weight: 300;
+    }
+    &:focus {
+        outline: none;
+    }
+}

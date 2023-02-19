@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as * ;
+
+
+.navbar{ 
+    background-color: $black-color;
+    height: 70px;
+    background-color: $black-color;
+    border-bottom: 1px solid $stroke-color;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 1.3vw;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-menu-option { 
+    color: $text-white-color;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        color: $yellow-color;
+        // font-size: 1.4vw;
+        // transition: font-size 0.5s; 
+    }
+}
+
+.navbar-searcher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}

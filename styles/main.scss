@@ -1,0 +1,10 @@
+@use './layout/navigation';
+@use './abstracts/variables' as * ;
+@use './components/text';
+@use './pages/season_list';
+@use './components/searcher';
+
+body{
+    margin: 0;
+    background-color: $black-color;
+}

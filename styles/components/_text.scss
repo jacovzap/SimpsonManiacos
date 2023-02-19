@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as * ;
+
+.principal-page-title { 
+    color: $text-white-color;
+    font-size: 2.8vw;
+    font-weight: 700;
+    margin: 0;
+}
