@@ -3,13 +3,13 @@
 
 .navbar{ 
     background-color: $black-color;
-    height: 70px;
+    height: 72px;
     background-color: $black-color;
     border-bottom: 1px solid $stroke-color;
     display: flex;
     justify-content: space-between;
-    padding-left: 2vw;
-    padding-right: 1.3vw;
+    padding-left: 45px;
+    padding-right: 20px;
 }
 
 .navbar-logo {
@@ -28,18 +28,21 @@
 
 .navbar-menu-option { 
     color: $text-white-color;
-    font-size: 1.2vw;
+    font-size: 17px;
     font-weight: 600;
     margin: 0;
     padding: 0;
-    padding-right: 1vw;
-    padding-left: 1vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-right: 14px;
+    padding-left: 14px;
+    // padding-top: 1vh;
+    // padding-bottom: 1vh;
     text-decoration: none;
+    transition: all 0.1s ease-out;
     &:hover {
         cursor: pointer;
         color: $yellow-color;
+        transform: scale(1.1);
+        transition: all 0.1s ease-out;
         // font-size: 1.4vw;
         // transition: font-size 0.5s; 
     }

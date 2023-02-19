@@ -1,8 +1,19 @@
 
 
-.season-list-page{
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
-    margin-top: 5.7vh;
-    // background-color: aqua;
+.season-page-layout{
+    margin-top: 37px;
+    margin-left: 170px;
+    margin-right: 170px;
+    // margin-bottom: 50px;
+    
+    .season-list-layout{
+        margin-top: 37px;
+        margin-left: 5px;
+        .season-list-grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            // padding-bottom: 50px;
+            // grid-gap: 20px;
+        }
+    }
 }

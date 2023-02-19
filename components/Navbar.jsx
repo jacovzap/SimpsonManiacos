@@ -1,5 +1,20 @@
+import Link from "next/link"
 import Searcher from "./Searcher"
 
+const Navigation = [
+  {
+    label: "Temporadas",
+    route: "/seasons"
+  },
+  {
+    label: "Película",
+    route: "/movie"
+  },
+  {
+    label: "Cortos",
+    route: "/shorts"
+  }
+]
 
 const NavBar = () => {
   return (
@@ -7,9 +22,16 @@ const NavBar = () => {
       <nav className='navbar'>
         <div className='navbar-logo'>Aqui vendria el logo</div>
         <div className='navbar-menu'>
-          <div className="navbar-menu-option">Temporadas</div>
+          {Navigation.map(({label, route}) => {
+            return (
+              <Link className="navbar-menu-option" href={route} key={route}>
+                {label}
+              </Link>
+            )
+          })}
+          {/* <div className="navbar-menu-option">Temporadas</div>
           <div className="navbar-menu-option">Película</div>
-          <div className="navbar-menu-option">Cortos</div>
+          <div className="navbar-menu-option">Cortos</div> */}
           <div className='navbar-searcher'>
             <Searcher/>
           </div>

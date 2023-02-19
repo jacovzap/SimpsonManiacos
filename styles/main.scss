@@ -1,8 +1,16 @@
 @use './layout/navigation';
+
 @use './abstracts/variables' as * ;
+
+@use './base/scrollbar';
+
 @use './components/text';
-@use './pages/season_list';
 @use './components/searcher';
+@use './components/season_card';
+
+@use './pages/season_list';
+
+
 
 body{
     margin: 0;
