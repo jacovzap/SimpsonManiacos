@@ -1,139 +1,173 @@
 const seasonsInfo = [
   {
     id: 1,
-    year: 'Dic. 1989'
+    year: 'Dic. 1989',
+    rating: 7.7
   },
   {
     id: 2,
-    year: 'Oct. 1990'
+    year: 'Oct. 1990',
+    rating: 8.0
   },
   {
     id: 3,
-    year: 'Sep. 1991'
+    year: 'Sep. 1991',
+    rating: 8.2
   },
   {
     id: 4,
-    year: 'Sep. 1992'
+    year: 'Sep. 1992',
+    rating: 8.3
   },
   {
     id: 5,
-    year: 'Sep. 1993'
+    year: 'Sep. 1993',
+    rating: 8.5
   },
   {
     id: 6,
-    year: 'Sep. 1994'
+    year: 'Sep. 1994',
+    rating: 8.3
   },
   {
     id: 7,
-    year: 'Sep. 1995'
+    year: 'Sep. 1995',
+    rating: 8.4
   },
   {
     id: 8,
-    year: 'Oct. 1996'
+    year: 'Oct. 1996',
+    rating: 8.2
   },
   {
     id: 9,
-    year: 'Ago. 1998'
+    year: 'Ago. 1998',
+    rating: 7.8
   },
   {
     id: 10,
-    year: 'Sept. 1999'
+    year: 'Sept. 1999',
+    rating: 7.6
   },
   {
     id: 11,
-    year: 'Oct. 1990'
+    year: 'Oct. 1990',
+    rating: 7.3
   },
   {
     id: 12,
-    year: 'Nov. 2000'
+    year: 'Nov. 2000',
+    rating: 7.3
   },
   {
     id: 13,
-    year: 'Nov. 2001'
+    year: 'Nov. 2001',
+    rating: 7.1
   },
   {
     id: 14,
-    year: 'Nov. 2002'
+    year: 'Nov. 2002',
+    rating: 7.0
   },
   {
     id: 15,
-    year: 'Noviembre 2003'
+    year: 'Nov. 2003',
+    rating: 7.0
   },
   {
     id: 16,
-    year: 'Nov. 2004'
+    year: 'Nov. 2004',
+    rating: 7.0
   },
   {
     id: 17,
-    year: 'Sep. 2005'
+    year: 'Sep. 2005',
+    rating: 6.8
   },
   {
     id: 18,
-    year: 'Sep. 2006'
+    year: 'Sep. 2006',
+    rating: 6.9
   },
   {
     id: 19,
-    year: 'Sep. 2007'
+    year: 'Sep. 2007',
+    rating: 6.9
   },
   {
     id: 20,
-    year: 'Sep. 2008'
+    year: 'Sep. 2008',
+    rating: 6.9
   },
   {
     id: 21,
-    year: 'Sep. 2009'
+    year: 'Sep. 2009',
+    rating: 6.8
   },
   {
     id: 22,
-    year: 'Sep. 2010'
+    year: 'Sep. 2010',
+    rating: 6.7
   },
   {
     id: 23,
-    year: 'Sep. 2011'
+    year: 'Sep. 2011',
+    rating: 6.7
   },
   {
     id: 24,
-    year: 'Sep. 2012'
+    year: 'Sep. 2012',
+    rating: 6.7
   },
   {
     id: 25,
-    year: 'Sep. 2013'
+    year: 'Sep. 2013',
+    rating: 6.7
   },
   {
     id: 26,
-    year: 'Sep. 2014'
+    year: 'Sep. 2014',
+    rating: 6.6
   },
   {
     id: 27,
-    year: 'Sep. 2015'
+    year: 'Sep. 2015',
+    rating: 6.6
   },
   {
     id: 28,
-    year: 'Sep. 2016'
+    year: 'Sep. 2016',
+    rating: 6.4
   },
   {
     id: 29,
-    year: 'Oct. 2017'
+    year: 'Oct. 2017',
+    rating: 6.6
   },
   {
     id: 30,
-    year: 'Sep. 2018'
+    year: 'Sep. 2018',
+    rating: 6.2
   },
   {
     id: 31,
-    year: 'Sep. 2019'
+    year: 'Sep. 2019',
+    rating: 6.4
   },
   {
     id: 32,
-    year: 'Sep. 2020'
+    year: 'Sep. 2020',
+    rating: 6.4
   },
   {
     id: 33,
-    year: 'Sep. 2021'
+    year: 'Sep. 2021',
+    rating: 6.6
   },
   {
     id: 34,
-    year: 'Sept. 2022'
+    year: 'Sept. 2022',
+    rating: 6.6
   }
 ]
 

@@ -1,43 +1,43 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
-.season-card-container{
-    width: 155px;
-    height: 248px;
-    border-radius: 10px;
-    border: 1px solid $stroke-color;
-    transition: all 0.1s ease-out;
-    margin-bottom: 25px;
+.season-card-container {
+  width: 155px;
+  height: 248px;
+  border-radius: 10px;
+  border: 1px solid $stroke-color;
+  transition: all 0.1s ease-out;
+  margin-bottom: 25px;
+  // background-color: aqua;
+  .season-card-image {
+    width: 100%;
+    height: 78%;
     // background-color: aqua;
-    .season-card-image{
-        width: 100%;
-        height: 78%;
-        // background-color: aqua;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        .season-card-image-img{
-            width: 100%;
-            height: 100%;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-            object-fit: cover;
-            // object-position: center;
-        }
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    .season-card-image-img {
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      object-fit: cover;
+      // object-position: center;
     }
+  }
 
-    .season-card-description{
-        // display: flex;
-        // align-items: center;
-        padding-left: 10px;
-        padding-top: 8px;
-        // vertical-align: middle;
-        height: calc(22% - 8px);
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background-color:$gray-color;
-    }
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-        transition: all 0.1s ease-out;
-    }
+  .season-card-description {
+    // display: flex;
+    // align-items: center;
+    padding-left: 10px;
+    padding-top: 8px;
+    // vertical-align: middle;
+    height: calc(22% - 8px);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $gray-color;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.1s ease-out;
+  }
 }

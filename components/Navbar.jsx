@@ -1,18 +1,18 @@
-import Link from "next/link"
-import Searcher from "./Searcher"
+import Link from 'next/link'
+import Searcher from './Searcher'
 
 const Navigation = [
   {
-    label: "Temporadas",
-    route: "/seasons"
+    label: 'Temporadas',
+    route: '/seasons'
   },
   {
-    label: "Película",
-    route: "/movie"
+    label: 'Película',
+    route: '/movie'
   },
   {
-    label: "Cortos",
-    route: "/shorts"
+    label: 'Cortos',
+    route: '/shorts'
   }
 ]
 
@@ -22,9 +22,9 @@ const NavBar = () => {
       <nav className='navbar'>
         <div className='navbar-logo'>Aqui vendria el logo</div>
         <div className='navbar-menu'>
-          {Navigation.map(({label, route}) => {
+          {Navigation.map(({ label, route }) => {
             return (
-              <Link className="navbar-menu-option" href={route} key={route}>
+              <Link className='navbar-menu-option' href={route} key={route}>
                 {label}
               </Link>
             )
@@ -33,7 +33,7 @@ const NavBar = () => {
           <div className="navbar-menu-option">Película</div>
           <div className="navbar-menu-option">Cortos</div> */}
           <div className='navbar-searcher'>
-            <Searcher/>
+            <Searcher />
           </div>
         </div>
       </nav>
