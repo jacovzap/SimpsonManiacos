@@ -10,9 +10,9 @@
     height: 100%;
     border-right: 1px solid $stroke-color;
     .selected-season-information {
-      padding-top: 33px;
+      padding-top: 30px;
       display: grid;
-      padding-bottom: 33px;
+      padding-bottom: 20px;
       grid-template-columns: 28% 72%;
       border-bottom: 1px solid $stroke-color;
       .selected-season-information-image {

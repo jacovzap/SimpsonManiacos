@@ -7,7 +7,7 @@ const SelectedSeasonPage = ({children, params}) => {
     <div className='selected-season-page-container'>
       <section className='selected-season-page-principal-section'>
         {children}
-        <div>
+        <div style={{marginTop: '25px'}}>
           <SeasonSelector season={id}/>
           <EpisodeList season={id}/>
         </div>
