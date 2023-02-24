@@ -1,4 +1,5 @@
 'use client'
+//import an api of all episodes of simpsons 
 
 import { useState } from 'react'
 import Link from 'next/link'
@@ -24,7 +25,7 @@ const SeasonSelector = ({ season }) => {
       <div
         className='season-selector-select'
         style={
-          isSelectOpen ? { visibility: 'visible' } : { visibility: 'hidden' }
+          isSelectOpen ? { visibility: 'visible' } : { visibility: 'hidden'}
         }
       >
         {invertedList.map(season => {
