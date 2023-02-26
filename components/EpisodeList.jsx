@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import seasonsInfo from '@/assets/seasons.info';
-import { BsPlayFill } from "react-icons/bs";
+import Link from 'next/link'
+import { BsPlayFill } from 'react-icons/bs'
 
 const fetchEpisodes = async season => {
   return fetch(
@@ -14,31 +14,35 @@ const EpisodeList = async ({ season }) => {
     <div className='episode-list'>
       {episodes.episodes.map(episode => {
         return (
-          <div className='episode-list-element' key={episode.episode_number}>
-            <div className='episode-list-element-image'>
-              <Image
-                className='episode-list-element-image-img'
-                src={`https://image.tmdb.org/t/p/w154${episode.still_path}`}
-                alt='image'
-                width={100}
-                height={100}
-                unoptimized
-                priority
-              />
-              <div className='episode-list-element-image-hover'>
+          <Link
+            href={`/seasons/${season}/episode/${episode.episode_number}`}
+            key={episode.episode_number}
+            // scroll={false}
+            style={{ textDecoration: 'none' }}
+          >
+            <div className='episode-list-element'>
+              <div className='episode-list-element-image'>
+                <Image
+                  className='episode-list-element-image-img'
+                  src={`https://image.tmdb.org/t/p/w154${episode.still_path}`}
+                  alt='image'
+                  width={100}
+                  height={100}
+                  priority
+                  unoptimized
+                />
+                <div className='episode-list-element-image-hover'>
                   <BsPlayFill />
+                </div>
               </div>
+              <p className='episode-list-element-number'>
+                {season} - {episode.episode_number}
+              </p>
+              <p className='episode-list-element-title' title={episode.name}>
+                {episode.name}
+              </p>{' '}
             </div>
-            <p className='episode-list-element-number'>
-              {season} - {episode.episode_number}
-            </p>
-            <p
-              className='episode-list-element-title'
-              title={episode.name}
-            >
-              {episode.name}
-            </p>{' '}
-          </div>
+          </Link>
         )
       })}
     </div>

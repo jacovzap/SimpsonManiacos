@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.episode-viewer{
+    &-video{
+        height: 405px;
+        width: 720px;
+        background-color: aliceblue;
+    }
+    &-control{
+        margin-top: 25px;
+        height: 60px;
+        width: 720px;
+        background-color: $background-gray-color;
+        border-radius: 5px;
+    }
+}

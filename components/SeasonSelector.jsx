@@ -27,6 +27,9 @@ const SeasonSelector = ({ season }) => {
         style={
           isSelectOpen ? { visibility: 'visible' } : { visibility: 'hidden'}
         }
+        onClick={() => {
+          setIsSelectOpen(!isSelectOpen)
+        }}
       >
         {invertedList.map(season => {
           return (

@@ -2,7 +2,7 @@ import SeasonSelector from '@/components/SeasonSelector'
 import EpisodeList from '@/components/EpisodeList'
 
 const SelectedSeasonPage = ({children, params}) => {
-    const id = params.id
+    const id = params.season_id
   return (
     <div className='selected-season-page-container'>
       <section className='selected-season-page-principal-section'>

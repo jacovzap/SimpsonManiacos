@@ -2,7 +2,7 @@ import Image from 'next/image'
 import seasonsInfo from '@/assets/seasons.info'
 
 const SelectedSeasonPage = ({ params }) => {
-  const season = params.id
+  const season = params.season_id
   const seasonInfo = seasonsInfo[season - 1]  
 
   return (
@@ -14,7 +14,6 @@ const SelectedSeasonPage = ({ params }) => {
           alt={'image'}
           width={100}
           height={100}
-          unoptimized
           priority
         ></Image>
       </div>

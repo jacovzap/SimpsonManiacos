@@ -9,9 +9,12 @@
 @use './components/season_card';
 @use './components/season_selector';
 @use './components/episode_list';
+@use './components/episode_description';
+@use './components/episode_viewer';
 
 @use './pages/season_list';
 @use './pages/season_detail';
+@use './pages/episode_page';
 
 
 

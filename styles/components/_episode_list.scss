@@ -24,14 +24,14 @@
     border-radius: 6px;
     padding-left: 7px;
     // padding: 2px;
-    // transition: all .3s ease-in-out;
+    transition: all .1s ease-out;
     &:hover{
       background-color: $stroke-color;
       cursor: pointer;
-      // transform: scale(1.03);
+      transform: scale(1.03);
       .episode-list-element-image-hover {
         opacity: 1;
-        transition: all 0.2s ease-in;
+        transition: all 0.1s ease-out;
       }
     }
     &-image {

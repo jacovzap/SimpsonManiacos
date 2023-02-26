@@ -12,7 +12,6 @@ const SeasonCard = ({ season, date }) => {
           width={100}
           height={100}
           alt='img'
-          unoptimized
         />
       </div>
       <div className='season-card-description'>
