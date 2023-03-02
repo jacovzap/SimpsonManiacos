@@ -1,34 +1,39 @@
 @use "../abstracts/variables" as *;
 
-
-.episode-description{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid $stroke-color;
-    width: 720px;
-    height: 200px;
-    // background-color: $background-gray-color;
-    &-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-title{
-            margin: 0;
-            font-size: 30px;
-            color: $text-white-color;
-            font-weight: 700;
-        }
-        &-season{
-            margin: 0;
-            color: $text-white-color;
-            font-size: 20px;
-            font-weight: 700;
-        }
+.episode-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $stroke-color;
+  width: 720px;
+  // height: 200px;
+  // background-color: $background-gray-color;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    &-title {
+      margin: 0;
+      font-size: 30px;
+      color: $text-white-color;
+      font-weight: 700;
     }
-
-    &-body{
-        color: $text-white-color;
-        font-size: 15px;
-        text-align: justify;
+    &-season {
+      display: flex;
+      // align-items: center;
+      justify-content: right;
+      max-width: 100px;
+      width: 100%;
+      margin: 0;
+      padding-top: 7px;
+      color: $text-white-color;
+      font-size: 20px;
+      font-weight: 700;
     }
+  }
+
+  &-body {
+    color: $text-white-color;
+    font-size: 15px;
+    text-align: justify;
+  }
 }

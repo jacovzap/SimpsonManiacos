@@ -2,14 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BsPlayFill } from 'react-icons/bs'
 
-const fetchEpisodes = async season => {
-  return fetch(
-    `https://api.themoviedb.org/3/tv/456-the-simpsons/season/${season}?api_key=11d3e5d68a0acbbd20499b43994c7817&language=es-MX`
-  ).then(response => response.json())
-}
+import { fetchEpisodes } from '../services/fetchEpisodes' 
 
 const EpisodeList = async ({ season }) => {
-  const episodes = await fetchEpisodes(season)
+  const episodes =  await fetchEpisodes(season)
   return (
     <div className='episode-list'>
       {episodes.episodes.map(episode => {

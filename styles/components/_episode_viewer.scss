@@ -1,16 +1,82 @@
 @use "../abstracts/variables" as *;
 
-.episode-viewer{
-    &-video{
-        height: 405px;
-        width: 720px;
-        background-color: aliceblue;
+.episode-viewer {
+  &-video {
+    height: 405px;
+    width: 720px;
+    background-color: aliceblue;
+  }
+  &-control {
+    margin-top: 25px;
+    height: 60px;
+    max-width: 720px;
+    background-color: $background-gray-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    &-previous {
+        display: flex;
+      &-icon {
+        font-size: 25px;
+        color: $background-gray-color;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: $yellow-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      &-text{
+        font-size: 15px;
+        color: $text-white-color;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        // vertical-align: middle;
+        margin-left: 10px;
+        font-weight: 600;
+      }
+      &:hover .episode-viewer-control-previous-icon{
+        background-color: #edbe12;
+      }
+      &:hover{
+        cursor: pointer;
+      }
     }
-    &-control{
-        margin-top: 25px;
-        height: 60px;
-        width: 720px;
-        background-color: $background-gray-color;
-        border-radius: 5px;
+    &-next {
+        display: flex;
+      &-icon {
+        font-size: 25px;
+        color: $background-gray-color;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: $yellow-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-text{
+        font-size: 15px;
+        color: $text-white-color;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        // vertical-align: middle;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+      &:hover .episode-viewer-control-next-icon{
+        background-color: #edbe12;
+      }
+      &:hover{
+        cursor: pointer;
+      }
     }
+  }
 }
