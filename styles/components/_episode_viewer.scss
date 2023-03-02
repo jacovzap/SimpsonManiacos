@@ -14,11 +14,13 @@
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
     align-items: center;
     &-previous {
+      margin-left: 20px;
         display: flex;
+        transition: all 0.1s ease-out;
       &-icon {
         font-size: 25px;
         color: $background-gray-color;
@@ -45,11 +47,14 @@
         background-color: #edbe12;
       }
       &:hover{
+        transform: scale(1.08);
         cursor: pointer;
       }
     }
     &-next {
         display: flex;
+        margin-right: 20px;
+        transition: all 0.1s ease-out;
       &-icon {
         font-size: 25px;
         color: $background-gray-color;
@@ -75,6 +80,7 @@
         background-color: #edbe12;
       }
       &:hover{
+        transform: scale(1.08);
         cursor: pointer;
       }
     }

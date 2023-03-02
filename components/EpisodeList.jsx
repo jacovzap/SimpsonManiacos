@@ -13,7 +13,6 @@ const EpisodeList = async ({ season }) => {
           <Link
             href={`/seasons/${season}/episode/${episode.episode_number}`}
             key={episode.episode_number}
-            // scroll={false}
             style={{ textDecoration: 'none' }}
           >
             <div className='episode-list-element'>
