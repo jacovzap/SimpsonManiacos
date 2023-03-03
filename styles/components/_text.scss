@@ -1,63 +1,80 @@
-@use '../abstracts/variables' as * ;
+@use "../abstracts/variables" as *;
 
-.principal-page-title { 
-    color: $text-white-color;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0;
+.principal-page-title {
+  color: $text-white-color;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
 }
 
-.principal-selected-season-title { 
-    color: $text-white-color;
-    font-size: 30px;
-    font-weight: 700;
+.principal-selected-season-title {
+  color: $text-white-color;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+.principal-selected-season-year {
+  color: $text-white-color;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.principal-selected-season-rating {
+  display: flex;
+  align-items: center;
+  color: $text-white-color;
+  font-size: 25px;
+  font-weight: 600;
+  &-text {
     margin: 0;
-}
-.principal-selected-season-year{
-    color: $text-white-color;
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 10px;
-}
-.principal-selected-season-rating{
+    margin-left: 15px;
+  }
+  &-imdb {
+    // width: 20px;
+    background-color: $yellow-color;
+    height: 25px;
+    margin-left: 25px;
     display: flex;
     align-items: center;
-    color: $text-white-color;
-    font-size: 25px;
-    font-weight: 600;
-    &-text{
-        margin: 0;
-        margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    &-text {
+      margin: 0;
+      font-size: 15px;
+      color: $black-color;
+      font-weight: 700;
     }
-    &-imdb{
-        // width: 20px;
-        background-color: $yellow-color;
-        height: 25px;
-        margin-left: 25px;
-        display: flex;
-        align-items: center;
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 3px;
-        &-text{
-            margin: 0;
-            font-size: 15px;
-            color: $black-color;
-            font-weight: 700;
-        }
-    }
+  }
 }
 
-
-.season-card-description-title { 
-    margin: 0;
-    font-size: 15px;
-    color: $text-white-color;
-    font-weight: 600;
+.season-card-description-title {
+  margin: 0;
+  font-size: 15px;
+  color: $text-white-color;
+  font-weight: 600;
 }
-.season-card-description-subtitle{
-    margin: 0;
-    font-size: 12px;
-    color: $text-white-color;
-    font-weight: 300;
+.season-card-description-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: $text-white-color;
+  font-weight: 300;
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .principal-page-title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 767px) {
+  .principal-page-title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .principal-page-title {
+    font-size: 35px;
+  }
 }

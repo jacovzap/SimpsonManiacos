@@ -4,55 +4,55 @@ const episodesVideo = [
         episodes: [
             {
                 episode: 1,
-                video: 'https://dood.yt/e/azzcv30h83csv5mlofar1mw36qn0swbo'
+                video: 'https://sbbrisk.com/e/8s1z8893wbg7.html'
             },
             {
                 episode: 2,
-                video: 'https://dood.yt/e/cjufh0zcrmit62fo6fna9t6wp28fxsti'
+                video: 'https://sbbrisk.com/e/imahnktis2za.html'
             },
             {
                 episode: 3,
-                video: 'https://dood.yt/e/fl5fgqkgecjuvtnq9kkzm7v6s53ueyp4'
+                video: 'https://sbbrisk.com/e/uwgtfcge8xnx.html'
             },
             {
                 episode: 4,
-                video: 'https://dood.yt/e/cs2rwc2sotmlrned0poj3vodppwubhq4'
+                video: 'https://sbbrisk.com/e/xvd1zyufq3rr.html'
             },
             {
                 episode: 5,
-                video: 'https://dood.yt/e/5x3snuontdtbqhb3t37f72pz1kym8u0s'
+                video: 'https://sbbrisk.com/e/b5sinwc7kkxb.html'
             },
             {
                 episode: 6,
-                video: 'https://dood.yt/e/kf9d5nhgb72ph5di6btsgnyv9pf7jot6'
+                video: 'https://sbbrisk.com/e/hfao1byb4rhl.html'
             },
             {
                 episode: 7,
-                video: 'https://dood.yt/e/7e3fz94cn4qvtius04yahgd9qsj5dmfq'
+                video: 'https://sbbrisk.com/e/hddl6b5co16h.html'
             },
             {
                 episode: 8,
-                video: 'https://dood.yt/e/djcm0o2fak9u42ux1hbke7rh8sz4q2wj'
+                video: 'https://sbbrisk.com/e/7yic6g8810rg.html'
             },
             {
                 episode: 9,
-                video: 'https://dood.yt/e/x69oa5oryp6uo5aiz9guiuatacbfyzxm'
+                video: 'https://sbbrisk.com/e/q3puyoen6occ.html'
             },
             {
                 episode: 10,
-                video: 'https://dood.yt/e/wdvzrm320l2d94lm1lwc3obrdtw2r9yc'
+                video: 'https://sbbrisk.com/e/uxg69smc1xhq.html'
             },
             {
                 episode: 11,
-                video: 'https://dood.yt/e/9h7dulkuz6uza4fmrwlt63dvi3p0g2o2'
+                video: 'https://sbbrisk.com/e/ui2gtg80n45f.html'
             },
             {
                 episode: 12,
-                video: 'https://dood.yt/e/reaotkz27k9q7krh2cau130m7unn6xcc'
+                video: 'https://sbbrisk.com/e/cv55jtncuptr.html'
             },
             {
                 episode: 13,
-                video: 'https://dood.yt/e/feazntuw3to69nkjafsomucikkz4n0y2'
+                video: 'https://sbbrisk.com/e/m5gfsnlxmf2f.html'
             }
         ],
     },

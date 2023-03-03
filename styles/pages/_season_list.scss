@@ -1,19 +1,66 @@
-
-
-.season-page-layout{
-    margin-top: 37px;
-    margin-left: 170px;
-    margin-right: 170px;
-    // margin-bottom: 50px;
-    
-    .season-list-layout{
-        margin-top: 37px;
-        margin-left: 5px;
-        .season-list-grid{
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto;
-            // padding-bottom: 50px;
-            // grid-gap: 20px;
-        }
+.season-page-layout {
+  margin-top: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 50px;
+  .season-list-layout {
+    margin-top: 20px;
+    .season-list-grid {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-rows: 20vw 20vw 20vw 20vw 20vw 20vw;
+      column-gap: 1.3vw;
+      row-gap: 1.6vw;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .season-page-layout {
+    // margin-top: 5vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    .season-list-layout {
+    //   margin-top: 5vw;
+      .season-list-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw;
+        column-gap: 2.5vw;
+        row-gap: 3.5vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 569px) and (max-width: 767px) {
+  .season-page-layout {
+    // margin-top: 3.5vw;
+    .season-list-layout {
+    //   margin-top: 3.5vw;
+      .season-list-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
+        column-gap: 1.7vw;
+        row-gap: 2.2vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .season-page-layout {
+    // margin-top: 3.5vw;
+    .season-list-layout {
+    //   margin-top: 3.5vw;
+      .season-list-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 24vw 24vw 24vw 24vw 24vw 24vw 24vw;
+        column-gap: 1.5vw;
+        row-gap: 2vw;
+      }
+    }
+  }
 }
