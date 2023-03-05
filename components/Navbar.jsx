@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Searcher from './Searcher'
+import { BsSearch } from 'react-icons/bs'
 
 const Navigation = [
   {
@@ -29,11 +30,14 @@ const NavBar = () => {
               </Link>
             )
           })}
-          {/* <div className="navbar-menu-option">Temporadas</div>
-          <div className="navbar-menu-option">Película</div>
-          <div className="navbar-menu-option">Cortos</div> */}
           <div className='navbar-searcher'>
             <Searcher />
+          </div>
+          <div className='navbar-searcher-hidden'>
+            <BsSearch className='navbar-searcher-hidden-icon' />
+            <div className='navbar-searcher-hidden-displayed'>
+              <Searcher />
+            </div>
           </div>
         </div>
       </nav>

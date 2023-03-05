@@ -2,7 +2,8 @@
 
 .principal-page-title {
   color: $text-white-color;
-  font-size: 40px;
+  font-size: 30px;
+  color: $yellow-color;
   font-weight: 700;
   margin: 0;
 }
@@ -50,31 +51,49 @@
 
 .season-card-description-title {
   margin: 0;
-  font-size: 15px;
+  font-size: 1.25vw;
   color: $text-white-color;
   font-weight: 600;
 }
 .season-card-description-subtitle {
   margin: 0;
-  font-size: 12px;
+  font-size: 1vw;
   color: $text-white-color;
   font-weight: 300;
 }
 
 @media (min-width: 320px) and (max-width: 568px) {
   .principal-page-title {
-    font-size: 35px;
+    font-size: 25px;
+  }
+  .season-card-description-title {
+    font-size: 2.7vw;
+  }
+  .season-card-description-subtitle {
+    font-size: 2.2vw;
   }
 }
 
 @media (min-width: 569px) and (max-width: 767px) {
   .principal-page-title {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  .season-card-description-title {
+    font-size: 1.8vw;
+  }
+  .season-card-description-subtitle {
+    font-size: 1.5vw;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .principal-page-title {
-    font-size: 35px;
+    font-size: 33px;
+  }
+  .season-card-description-title {
+    font-size: 1.5vw;
+  }
+  .season-card-description-subtitle {
+    font-size: 1.2vw;
   }
 }

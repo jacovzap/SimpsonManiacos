@@ -1,15 +1,20 @@
 @use "../abstracts/variables" as *;
+@use "./text" as *;
+
 
 .season-card-container {
   width: 100%;
   height: 100%;
+  opacity: 1;
   // margin-bottom: 100px;
-  // border-radius: 2vw;
-  // border: 1px solid $stroke-color;
+  border-radius: 0.7vw;
+  
+  // box-shadow: 0 0 10px 1px $text-gray-color;
   transition: all 0.1s ease-out;
   .season-card-image {
     width: 100%;
     height: 78%;
+    // opacity: 70%;
     .season-card-image-img {
       width: 100%;
       height: 100%;
@@ -23,6 +28,7 @@
   .season-card-description {
     // display: flex;
     // align-items: center;
+    border: 1px solid $stroke-color;
     padding-left: 10px;
     padding-top: 8px;
     // vertical-align: middle;
@@ -32,54 +38,65 @@
     background-color: $gray-color;
   }
   &:hover {
+    // box-shadow:  0 0 30px 1px $text-gray-color;
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.1s ease-out;
-  }
-}
+    opacity: 1;
 
+  }
+  &:hover .season-card-description-title{
+    // color: $yellow-color;
+    transition: all 0.1s ease-out;
+  }
+
+
+}
 
 @media (min-width: 320px) and (max-width: 568px) {
   .season-card-container {
     .season-card-image {
       .season-card-image-img {
-        border-top-right-radius: 2vw;
-        border-top-left-radius: 2vw;
+        border-top-right-radius: 1.5vw;
+        border-top-left-radius: 1.5vw;
       }
     }
+    .season-card-description {
+      border-bottom-right-radius: 1.5vw;
+      border-bottom-left-radius: 1.5vw;
+    }
   }
-  .season-card-description {
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-  }
+
 }
 
 @media (min-width: 569px) and (max-width: 767px) {
   .season-card-container {
     .season-card-image {
       .season-card-image-img {
-        border-top-right-radius: 1.3vw;
-        border-top-left-radius: 1.3vw;
+        border-top-right-radius: 1.1vw;
+        border-top-left-radius: 1.1vw;
       }
     }
+    .season-card-description {
+      border-bottom-right-radius: 1.1vw;
+      border-bottom-left-radius: 1.1vw;
+    }
   }
-  .season-card-description {
-    border-bottom-right-radius: 1.3vw;
-    border-bottom-left-radius: 1.3vw;
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .season-card-container {
     .season-card-image {
       .season-card-image-img {
-        border-top-right-radius: 1vw;
-        border-top-left-radius: 1vw;
+        border-top-right-radius: 0.8vw;
+        border-top-left-radius: 0.8vw;
       }
     }
+    .season-card-description {
+      border-bottom-right-radius: 0.8vw;
+      border-bottom-left-radius: 0.8vw;
+    }
   }
-  .season-card-description {
-    border-bottom-right-radius: 1vw;
-    border-bottom-left-radius: 1vw;
-  }
+
 }

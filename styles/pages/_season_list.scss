@@ -1,16 +1,16 @@
 .season-page-layout {
   margin-top: 20px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 13vw;
+  margin-right: 13vw;
   margin-bottom: 50px;
   .season-list-layout {
     margin-top: 20px;
     .season-list-grid {
       display: grid;
       grid-template-columns: auto auto auto auto auto auto;
-      grid-template-rows: 20vw 20vw 20vw 20vw 20vw 20vw;
-      column-gap: 1.3vw;
-      row-gap: 1.6vw;
+      grid-template-rows: repeat(6, 18vw);
+      column-gap: 1.6vw;
+      row-gap: 1.9vw;
     }
   }
 }
@@ -25,9 +25,9 @@
       .season-list-grid {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw 48vw;
-        column-gap: 2.5vw;
-        row-gap: 3.5vw;
+        grid-template-rows: repeat(12, 44vw);
+        column-gap: 3.1vw;
+        row-gap: 3.3vw;
       }
     }
   }
@@ -41,9 +41,9 @@
       .season-list-grid {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw 30vw;
-        column-gap: 1.7vw;
-        row-gap: 2.2vw;
+        grid-template-rows: repeat(9, 27.5vw);
+        column-gap: 2.1vw;
+        row-gap: 2.4vw;
       }
     }
   }
@@ -57,9 +57,9 @@
       .season-list-grid {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: 24vw 24vw 24vw 24vw 24vw 24vw 24vw;
-        column-gap: 1.5vw;
-        row-gap: 2vw;
+        grid-template-rows: repeat(7, 21.5vw);
+        column-gap: 2vw;
+        row-gap: 2.3vw;
       }
     }
   }
