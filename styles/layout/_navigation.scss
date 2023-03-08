@@ -8,8 +8,56 @@
   border-bottom: 1px solid $stroke-color;
   display: flex;
   justify-content: space-between;
-  padding-left: 45px;
+  padding-left: 20px;
   padding-right: 20px;
+}
+
+.navbar-dropdown {
+  position: relative;
+  display: none;
+  &-icon {
+    &-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &-element {
+      padding: 7px;
+      font-size: 24px;
+
+      color: $text-white-color;
+      border-radius: 4px;
+      &:hover {
+        cursor: pointer;
+        background-color: $stroke-color;
+        color: $yellow-color;
+      }
+    }
+  }
+
+  &-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $stroke-color;
+    border-radius: 5px;
+    background-color: $background-gray-color;
+    top: 72px;
+    width: 130px;
+    z-index: 1;
+    // height: 100px;
+    // background-color: aqua;
+    &-option {
+      font-size: 16px;
+        padding: 10px;
+        color: $text-white-color;
+        font-weight: 500;
+        &:hover{
+          background-color: $stroke-color;
+          color: $yellow-color;
+        }
+    }
+  }
 }
 
 .navbar-logo {
@@ -17,6 +65,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+  color: $yellow-color;
 }
 
 .navbar-menu {
@@ -55,12 +104,12 @@
   height: 100%;
 }
 
-.navbar-searcher-hidden{
+.navbar-searcher-hidden {
   display: none;
   position: relative;
   justify-content: flex-end;
   align-items: center;
-  &-icon{
+  &-icon {
     padding: 10px;
     font-size: 17px;
     color: $text-white-color;
@@ -70,20 +119,29 @@
       background-color: $stroke-color;
     }
   }
-  &-displayed{
+  &-displayed {
     position: absolute;
-    top: 72px;
+    top: 54px;
     right: 0;
   }
 }
 
+.navbar-searcher-displayed {
+  display: flex;
+}
 
 @media (min-width: 320px) and (max-width: 568px) {
   .navbar-searcher {
     display: none;
   }
-  .navbar-searcher-hidden{
+  .navbar-dropdown {
     display: flex;
+  }
+  .navbar-searcher-hidden {
+    display: flex;
+  }
+  .navbar-menu-option {
+    display: none;
   }
 }
 
@@ -91,8 +149,14 @@
   .navbar-searcher {
     display: none;
   }
-  .navbar-searcher-hidden{
+  .navbar-dropdown {
     display: flex;
+  }
+  .navbar-searcher-hidden {
+    display: flex;
+  }
+  .navbar-menu-option {
+    display: none;
   }
 }
 
@@ -100,7 +164,13 @@
   .navbar-searcher {
     display: none;
   }
-  .navbar-searcher-hidden{
+  .navbar-dropdown {
     display: flex;
+  }
+  .navbar-searcher-hidden {
+    display: flex;
+  }
+  .navbar-menu-option {
+    display: none;
   }
 }

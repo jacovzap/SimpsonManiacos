@@ -1,14 +1,13 @@
 @use "../abstracts/variables" as *;
 @use "./text" as *;
 
-
 .season-card-container {
   width: 100%;
   height: 100%;
   opacity: 1;
   // margin-bottom: 100px;
   border-radius: 0.7vw;
-  
+  // z-index: -1;
   // box-shadow: 0 0 10px 1px $text-gray-color;
   transition: all 0.1s ease-out;
   .season-card-image {
@@ -37,20 +36,22 @@
     border-bottom-left-radius: 0.7vw;
     background-color: $gray-color;
   }
+
   &:hover {
-    // box-shadow:  0 0 30px 1px $text-gray-color;
+    // box-shadow: 0 0 140px 50px $background-gray-color;
+    // clip-path: inset(0 -20px 0 0);
+    // box-shadow:
+      // 2px 3px 15px -3px $text-gray-color;
+
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.1s ease-out;
     opacity: 1;
-
   }
-  &:hover .season-card-description-title{
+  &:hover .season-card-description-title {
     // color: $yellow-color;
     transition: all 0.1s ease-out;
   }
-
-
 }
 
 @media (min-width: 320px) and (max-width: 568px) {
@@ -66,7 +67,6 @@
       border-bottom-left-radius: 1.5vw;
     }
   }
-
 }
 
 @media (min-width: 569px) and (max-width: 767px) {
@@ -82,7 +82,6 @@
       border-bottom-left-radius: 1.1vw;
     }
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -98,5 +97,4 @@
       border-bottom-left-radius: 0.8vw;
     }
   }
-
 }
