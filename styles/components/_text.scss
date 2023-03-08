@@ -72,6 +72,8 @@
   .season-card-description-subtitle {
     font-size: 2vw;
   }
+
+  
 }
 
 @media (min-width: 569px) and (max-width: 767px) {
@@ -84,6 +86,21 @@
   .season-card-description-subtitle {
     font-size: 1.3vw;
   }
+
+  .principal-selected-season-title {
+    font-size: 21px;
+  }
+  .principal-selected-season-year {
+    font-size: 17px;
+  }
+  .principal-selected-season-rating {
+    font-size: 20px;
+    &-imdb {
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -95,5 +112,20 @@
   }
   .season-card-description-subtitle {
     font-size: 1vw;
+  }
+
+  .principal-selected-season-title {
+    font-size: 25px;
+  }
+  .principal-selected-season-year {
+    font-size: 19px;
+  }
+  .principal-selected-season-rating {
+    font-size: 22px;
+    &-imdb {
+      &-text {
+        font-size: 14px;
+      }
+    }
   }
 }

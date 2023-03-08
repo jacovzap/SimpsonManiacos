@@ -10,6 +10,7 @@
   margin-bottom: 40px;
   &-element {
     display: grid;
+   
     // padding-right: 10px;
     grid-template-columns: 18% 12% 65%;
 
@@ -19,7 +20,8 @@
     align-items: center;
     background-color: $background-gray-color;
     margin-bottom: 7px;
-    width: 720px;
+    width: 100%;
+    width: 80vw;
     height: 65px;
     border-radius: 6px;
     padding-left: 7px;

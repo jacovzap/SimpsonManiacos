@@ -5,15 +5,15 @@
   // margin-right: 170px;
   display: grid;
   grid-template-columns: 790px auto;
-
   .selected-season-page-principal-section {
     height: 100%;
     border-right: 1px solid $stroke-color;
     .selected-season-information {
       padding-top: 30px;
-      display: grid;
+      display: flex;
       padding-bottom: 20px;
-      grid-template-columns: 28% 72%;
+      // grid-template-columns: 28% 72%;
+      flex-direction: row;
       border-bottom: 1px solid $stroke-color;
       .selected-season-information-image {
         .selected-season-image {
@@ -23,7 +23,7 @@
         }
       }
       .selected-season-information-description {
-        margin-left: 10px;
+        margin-left: 35px;
       }
     }
   }
@@ -31,4 +31,60 @@
   .selected-season-page-secondary-section {
     // width: 38%;
   }
+}
+
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+}
+
+@media (min-width: 569px) and (max-width: 767px) {
+  .selected-season-page-container {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    display: block;
+      .selected-season-page-principal-section {
+        width: 100%;
+        border-right: 1px solid transparent;
+        .selected-season-information {
+          grid-template-columns: 33% 67%;
+          .selected-season-information-image {
+            .selected-season-image {
+              width: 150px;
+              height: 200px;
+              object-fit: cover;
+            }
+          }
+          .selected-season-information-description {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .selected-season-page-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: block;
+    .selected-season-page-principal-section {
+      width: 100%;
+      border-right: 1px solid transparent;
+      .selected-season-information {
+        grid-template-columns: 30% 70%;
+        .selected-season-information-image {
+          .selected-season-image {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+        .selected-season-information-description {
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+
 }
